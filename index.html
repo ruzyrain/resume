@@ -1,1 +1,77 @@
-Hello World
+<h2><center/> 面试题</h2>
+
+<h4>1.项目相关</h4>
+
+<pre><code>介绍一下自己的项目，主要说说其中使用的关键技术，以及使用这些技术的心得
+有没有遇到过什么困哪
+</code></pre>
+
+<h4>2.Java相关</h4>
+
+<pre><code>ArrayList和LinkedList的区别
+StringBuffer和StringBuilder的区别，用过StringBuilder吗？一般你会在什么情况下使用
+HashMap是线程安全的吗？HashTable呢？有什么高效的替代方案呢？
+平时使用过什么设计模式吗？
+使用过Spring吗？知道为什么要用spring吗？依赖反转和切面编程
+使用过Spring的注解吗？如果要自动装配的话应该使用哪个注解
+了解过Spring的事务管理机制吗？谈谈它的隔离级别和传播行为？
+在项目中用过ORM框架吗？怎么连接数据库的呢？
+HTTP协议是有状态的吗？那服务器怎么去跟踪一个用户呢？比如说用户的登录信息
+客户端要是把Cookie禁用了的话，你还有什么办法去实现这个呢？
+搞过多机集群吗？那session怎么共享呢？
+使用过Memcache或者Redis吗？
+平时编程的话，进程间通信你都是怎么实现的呢？MQ产品用过吗？
+</code></pre>
+
+<h4>3.SQL相关</h4>
+
+<pre><code>1. 用一条SQL 语句 查询出每门课都大于80 分的学生姓名
+    name   kecheng   fenshu 
+    张三     语文       81
+    张三     数学       75
+    李四     语文       76
+    李四     数学       90
+    王五     语文       81
+    王五     数学       100
+    王五     英语       90
+
+2.用过数据库索引吗？一般你会对哪列做索引？简述一下语句
+3.索引的作用是什么？有什么缺点呢？
+4.有三个表，如果学生缺考，那么在成绩表中就不存在这个学生的这门课程成绩的记录，写一段SQL语句，检索出每个学生缺考的科目。
+A 学生表(student)
+字段1 学生号(s_id)
+字段2 学生名(s_name)
+
+B 科目表(course)
+字段1 科目号(c_id)
+字段2 科目名(c_name)
+
+C 成绩表(grade)
+字段1 成绩号(g_id)
+字段2 学生号(s_id)
+字段3 科目号(c_id)
+字段4 成绩(score)
+
+select * from student join course left join grade on student.s_id=grade.s_id and course.c_id=grade.c_id where grade.score is null;
+</code></pre>
+
+<h4>4.工具相关</h4>
+
+<pre><code>平时使用什么版本管理工具？
+Java开发的话使用什么IDE，听说过IDEA吗？
+使用过Markdown来写ReadMe吗？
+linux用的多吗？查看端口号命令是什么？
+</code></pre>
+
+<h4>5.兴趣相关</h4>
+
+<pre><code>平时关注最新的技术吗？
+Java领域有什么热点？
+听说过微服务吗？Docker？
+</code></pre>
+
+<p>1、分布式集群
+2、视频流处理
+3、数据库缓存
+4、Redis、MQ、Kafka
+5、微服务</p>
